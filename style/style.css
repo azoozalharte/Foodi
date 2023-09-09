@@ -1,0 +1,242 @@
+/* HEADER SECTION */
+
+.header {
+  background-color: #fafafa;
+  padding-top: 40px;
+  height: 100vh;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  font-size: 3rem;
+  color: black;
+  font-weight: bolder;
+}
+
+.header__logo span {
+  background-color: #39db4a;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.header__menu {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.header__menu li a {
+  color: black;
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.header__menu li a:hover {
+  color: #39db4a;
+}
+
+.header__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.header__icon {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.header__btn {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #39db4a;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.header__btn:hover {
+  background-color: #33c542;
+}
+.header__btn span {
+  padding-left: 10px;
+  font-size: 2rem;
+}
+
+/* HERO SECTION */
+.header__hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  /* position: relative !important; */
+  height: 90vh;
+}
+
+/*left side*/
+
+.header__hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 40%;
+}
+.header__hero-left h1 {
+  font-size: 6.2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.header__hero-left h1 span {
+  color: #39db4a;
+}
+
+.header__hero-left p {
+  font-size: 2.6rem;
+}
+.buttons {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.buttons .header__btn {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 20px 40px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.video p {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+.video button {
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: white;
+  padding: 17px 20px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: -2px 0px 29px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 0px 29px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 0px 29px -11px rgba(0, 0, 0, 0.75);
+}
+/* Right side */
+.header__hero-right {
+  display: flex;
+  /* padding-bottom: 100px; */
+  position: relative !important;
+}
+
+.header__hero-card {
+  background-color: white;
+  padding: 60px 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  right: 425px;
+  bottom: 100px;
+  height: 100px;
+  width: 300px;
+  /* Shadow */
+  -webkit-box-shadow: -10px 27px 80px -13px rgba(189, 189, 189, 1);
+  -moz-box-shadow: -10px 27px 80px -13px rgba(189, 189, 189, 1);
+  box-shadow: -10px 27px 80px -13px rgba(189, 189, 189, 1);
+  /* anmitin */
+  animation: MoveUpDown 10s linear infinite;
+  transition: all 1s;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* .header__hero-card img {
+  height: 100px;
+} */
+.header__hero-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__hero-card-title {
+  color: black;
+  font-size: 2rem;
+}
+
+.header__hero-card-rate {
+  font-size: 1.5rem;
+}
+
+.header__hero-card-price {
+  color: black;
+  font-size: 1.8rem;
+}
+.header__hero-card-price span {
+  color: rgb(182, 34, 34);
+  font-size: 1.4rem;
+}
+
+.header__hero-card:nth-child(2) {
+  right: 20px !important;
+  bottom: 40px;
+  /* anmitin */
+  animation: MoveUpDown2 10s linear infinite;
+  transition: all 2s;
+}
+
+@keyframes MoveUpDown2 {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+.header__hero-card-1 {
+  position: absolute;
+  right: 400px !important;
+  top: 150px;
+  /* anmitin */
+  animation: MoveUpDown2 10s linear infinite;
+  transition: all 2s;
+}
+/* Hide on desktop */
+.header__menu-mobile {
+  display: none;
+}
+
+.love {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.love a {
+  color: #00ba7c;
+}
